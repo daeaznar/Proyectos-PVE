@@ -50,7 +50,7 @@ namespace CharacterCount
             // 
             // txtText
             // 
-            this.txtText.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtText.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtText.Location = new System.Drawing.Point(76, 23);
             this.txtText.Name = "txtText";
             this.txtText.Size = new System.Drawing.Size(263, 27);

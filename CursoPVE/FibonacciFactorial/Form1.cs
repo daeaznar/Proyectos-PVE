@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FibonacciFactorial
@@ -49,14 +42,14 @@ namespace FibonacciFactorial
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese un número mayor a 0");
+                    MessageBox.Show("The number has to be greater than 0");
 
                 }
 
             }
             else
             {
-                MessageBox.Show("El dato ingresado NO es válido");
+                MessageBox.Show("Invalid Value");
             }
         }
     }
