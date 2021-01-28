@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterCount", "Character
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciFactorial", "FibonacciFactorial\FibonacciFactorial.csproj", "{01653D73-F06D-4A56-AD29-60E659064737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsAndWindows", "ControlsAndWindows\ControlsAndWindows.csproj", "{64E468AA-F695-4663-A130-CB7D37A57E5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{01653D73-F06D-4A56-AD29-60E659064737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01653D73-F06D-4A56-AD29-60E659064737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01653D73-F06D-4A56-AD29-60E659064737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E468AA-F695-4663-A130-CB7D37A57E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E468AA-F695-4663-A130-CB7D37A57E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E468AA-F695-4663-A130-CB7D37A57E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E468AA-F695-4663-A130-CB7D37A57E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
