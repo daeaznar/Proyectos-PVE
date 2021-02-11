@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControlsAndWindows
@@ -34,9 +27,9 @@ namespace ControlsAndWindows
             // Counts number of items        var count = lstStudents.Items.Count;
             // Clears the list      lstStudents.Items.Clear();
             //Adds txtName (in uppercase) to list 
-            if (cmbGrades.SelectedItem ==null)
+            if (cmbGrades.SelectedItem == null)
             {
-                MessageBox.Show("Please select a Grade","Error");
+                MessageBox.Show("Please select a Grade", "Error");
                 return;
             }
             lstStudents.Items.Add($"{txtName.Text.ToUpper()} {cmbGrades.SelectedItem}");

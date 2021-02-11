@@ -15,14 +15,14 @@ namespace FibonacciFactorial
             int number = 0;
             bool result = int.TryParse(txtNumber.Text, out number);
             if (result == true)
-            { 
-                if (number>=1)
+            {
+                if (number >= 1)
                 {
                     //Fibonacci
                     long[] fib = new long[number + 1];
                     fib[0] = 0;
                     fib[1] = 1;
-                    for (int i = 2; i < number+1; i++)
+                    for (int i = 2; i < number + 1; i++)
                     {
                         fib[i] = fib[i - 1] + fib[i - 2];
                     }

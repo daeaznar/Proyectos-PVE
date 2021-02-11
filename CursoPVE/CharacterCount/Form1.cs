@@ -13,7 +13,7 @@ namespace CharacterCount
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            int count_v = 0, count_c =0, count_n = 0, count_x=0;
+            int count_v = 0, count_c = 0, count_n = 0, count_x = 0;
             char[] vowels = "aeiouAEIOU".ToCharArray();
             char[] cons = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ".ToCharArray();
             char[] numbers = "0123456789".ToCharArray();
@@ -49,11 +49,11 @@ namespace CharacterCount
             lblVowels.Text += $" {count_v}";
             lblConsonants.Text += $" {count_c}";
             lblNumbers.Text += $" {count_n}";
-            if (count_x >0)
+            if (count_x > 0)
             {
                 lblOthers.Text = $"Others: {count_x}";
             }
-            
+
         }
     }
 }
