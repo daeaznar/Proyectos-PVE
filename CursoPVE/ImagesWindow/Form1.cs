@@ -104,6 +104,7 @@ namespace ImagesWindow
             {
                 MessageBox.Show("Match!");
             }
+
             Thread.Sleep(500);
             pctQuestion.Image = Properties.Resources.question;
             tmrSequence.Start();
