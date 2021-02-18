@@ -33,9 +33,9 @@ namespace ImagesWindow
             this.txtGamer = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.grpConsoles = new System.Windows.Forms.GroupBox();
-            this.rdbSwitch = new System.Windows.Forms.RadioButton();
-            this.rdbPlay = new System.Windows.Forms.RadioButton();
             this.rdbXbox = new System.Windows.Forms.RadioButton();
+            this.rdbPlay = new System.Windows.Forms.RadioButton();
+            this.rdbSwitch = new System.Windows.Forms.RadioButton();
             this.grpConsoles.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@ namespace ImagesWindow
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Register";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // grpConsoles
             // 
@@ -77,16 +78,16 @@ namespace ImagesWindow
             this.grpConsoles.TabStop = false;
             this.grpConsoles.Text = "Gaming Console";
             // 
-            // rdbSwitch
+            // rdbXbox
             // 
-            this.rdbSwitch.AutoSize = true;
-            this.rdbSwitch.Location = new System.Drawing.Point(25, 41);
-            this.rdbSwitch.Name = "rdbSwitch";
-            this.rdbSwitch.Size = new System.Drawing.Size(136, 24);
-            this.rdbSwitch.TabIndex = 0;
-            this.rdbSwitch.TabStop = true;
-            this.rdbSwitch.Text = "Nintendo Switch";
-            this.rdbSwitch.UseVisualStyleBackColor = true;
+            this.rdbXbox.AutoSize = true;
+            this.rdbXbox.Location = new System.Drawing.Point(25, 130);
+            this.rdbXbox.Name = "rdbXbox";
+            this.rdbXbox.Size = new System.Drawing.Size(117, 24);
+            this.rdbXbox.TabIndex = 2;
+            this.rdbXbox.TabStop = true;
+            this.rdbXbox.Text = "Xbox Series X";
+            this.rdbXbox.UseVisualStyleBackColor = true;
             // 
             // rdbPlay
             // 
@@ -99,16 +100,16 @@ namespace ImagesWindow
             this.rdbPlay.Text = "PlayStation 5";
             this.rdbPlay.UseVisualStyleBackColor = true;
             // 
-            // rdbXbox
+            // rdbSwitch
             // 
-            this.rdbXbox.AutoSize = true;
-            this.rdbXbox.Location = new System.Drawing.Point(25, 130);
-            this.rdbXbox.Name = "rdbXbox";
-            this.rdbXbox.Size = new System.Drawing.Size(117, 24);
-            this.rdbXbox.TabIndex = 2;
-            this.rdbXbox.TabStop = true;
-            this.rdbXbox.Text = "Xbox Series X";
-            this.rdbXbox.UseVisualStyleBackColor = true;
+            this.rdbSwitch.AutoSize = true;
+            this.rdbSwitch.Location = new System.Drawing.Point(25, 41);
+            this.rdbSwitch.Name = "rdbSwitch";
+            this.rdbSwitch.Size = new System.Drawing.Size(136, 24);
+            this.rdbSwitch.TabIndex = 0;
+            this.rdbSwitch.TabStop = true;
+            this.rdbSwitch.Text = "Nintendo Switch";
+            this.rdbSwitch.UseVisualStyleBackColor = true;
             // 
             // Register
             // 
