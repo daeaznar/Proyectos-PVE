@@ -1,0 +1,10 @@
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\bin\Debug\Grades.exe.config
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\bin\Debug\Grades.exe
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\bin\Debug\Grades.pdb
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.csprojAssemblyReference.cache
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.Grades.resources
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.Properties.Resources.resources
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.csproj.GenerateResource.cache
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.csproj.CoreCompileInputs.cache
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.exe
+C:\Users\Personal Admin02\Documents\D\Diversos\R\DAE\UNIVA\7°\Programación Visual y por Eventos\Proyectos-PVE\Grades\obj\Debug\Grades.pdb
