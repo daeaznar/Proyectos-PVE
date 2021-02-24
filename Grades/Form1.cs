@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Grades.Data;
+using Grades.DataOperations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,13 +23,13 @@ namespace Grades
             //Clears all values except from Approved/NotApproved List
             txtName.Text = txtExercises.Text = txtProject.Text = txtExam.Text= string.Empty;
             txtName.Enabled = true;
+            btnCalculate.Enabled = true;
             lstFirstPeriod.Items.Clear();
             lstSecondPeriod.Items.Clear();
             lstThirdPeriod.Items.Clear();
             lblFirstAverage.Text = "First Period Average:";
             lblSecondAverage.Text = "Second Period Average:";
             lblThirdAverage.Text = "Third Period Average:";
-
         }
 
         public Grades()
@@ -117,8 +119,36 @@ namespace Grades
                     lstNotApproved.Items.Add(txtName.Text.ToUpper());
                 }
 
-                btnClear.Enabled = true;
                 btnCalculate.Enabled = false;
+                btnClear.Enabled = true;
+
+
+                //GradesManager manager = new GradesManager();
+                //try
+                //{
+                //    if (manager.Create(new Grade()
+                //    {
+                //        StudentName = txtName.Text,
+                //        FirstGrade = first_period,
+                //        SecondGrade = second_period,
+                //        ThirdGrade = third_period,
+                //        TotalGrade = final_grade
+                        
+                //    }))
+                //    {
+                //        MessageBox.Show("Record Saved");
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("Record couldn't be saved");
+                //    }
+                //}
+                //catch (Exception ex)
+                //{
+
+                //    MessageBox.Show("An error ocurred while saving the record");
+                //    return;
+                //}
             }
             #endregion
         }

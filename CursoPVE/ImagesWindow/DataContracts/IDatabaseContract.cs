@@ -2,7 +2,7 @@
 
 namespace ImagesWindow.DataContracts
 {
-    interface IDatabaseContract<T> where T: class
+    interface IDatabaseContract<T> where T : class
     {
         bool Create(T item);
 

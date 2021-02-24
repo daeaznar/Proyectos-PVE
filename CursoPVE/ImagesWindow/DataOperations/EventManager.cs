@@ -9,7 +9,7 @@ namespace ImagesWindow.DataOperations
     {
         public bool Create(Event item)
         {
-            using(var context = new DataContext())
+            using (var context = new DataContext())
             {
                 context.Event.Add(item);
                 return context.SaveChanges() > 0;
