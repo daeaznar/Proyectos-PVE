@@ -123,32 +123,32 @@ namespace Grades
                 btnClear.Enabled = true;
 
 
-                //GradesManager manager = new GradesManager();
-                //try
-                //{
-                //    if (manager.Create(new Grade()
-                //    {
-                //        StudentName = txtName.Text,
-                //        FirstGrade = first_period,
-                //        SecondGrade = second_period,
-                //        ThirdGrade = third_period,
-                //        TotalGrade = final_grade
-                        
-                //    }))
-                //    {
-                //        MessageBox.Show("Record Saved");
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Record couldn't be saved");
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
+                GradesManager manager = new GradesManager();
+                try
+                {
+                    if (manager.Create(new Data.Grades()
+                    {
+                        StudentName = txtName.Text,
+                        FirstGrade = first_period,
+                        SecondGrade = second_period,
+                        ThirdGrade = third_period,
+                        TotalGrade = final_grade
 
-                //    MessageBox.Show("An error ocurred while saving the record");
-                //    return;
-                //}
+                    }))
+                    {
+                        MessageBox.Show("Record Saved");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Record couldn't be saved");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("An error ocurred while saving the record");
+                    return;
+                }
             }
             #endregion
         }

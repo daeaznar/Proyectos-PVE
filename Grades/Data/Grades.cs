@@ -4,7 +4,7 @@ namespace Grades.Data
     using System.ComponentModel.DataAnnotations.Schema;
 
     [Table("Grades")]
-    public partial class Grade
+    public partial class Grades
     {
         [Key]
         public long GradeID { get; set; }

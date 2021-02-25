@@ -10,7 +10,6 @@ namespace Grades.Data
         }
 
         public virtual DbSet<Grades> Grades { get; set; }
-        public object Gamer { get; internal set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

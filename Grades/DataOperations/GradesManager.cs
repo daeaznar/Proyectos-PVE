@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Grades.DataOperations
 {
-    public class GradesManager : IDatabaseContract<Grades>
+    public class GradesManager : IDatabaseContract<Data.Grades>
     {
-        public bool Create(Grades item)
+        public bool Create(Data.Grades item)
         {
             using (var context = new DataContext())
             {
@@ -16,24 +16,20 @@ namespace Grades.DataOperations
             }
         }
 
-        public bool Delete(Grades item)
+        public bool Delete(Data.Grades item)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Grades> Read()
+        public IEnumerable<Data.Grades> Read()
         {
             throw new System.NotImplementedException();
         }
 
-        public bool Update(Grades item)
+        public bool Update(Data.Grades item)
         {
             throw new System.NotImplementedException();
         }
 
-        internal bool Create(Grade grade)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
