@@ -1,7 +1,6 @@
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\bin\Debug\1erExamenParcial_ej2.exe.config
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\bin\Debug\1erExamenParcial_ej2.exe
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\bin\Debug\1erExamenParcial_ej2.pdb
-D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\obj\Debug\1erExamenParcial_ej2.csprojAssemblyReference.cache
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\obj\Debug\_1erExamenParcial_ej2.Form1.resources
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\obj\Debug\_1erExamenParcial_ej2.Properties.Resources.resources
 D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\1erExamenParcial_ej2\obj\Debug\1erExamenParcial_ej2.csproj.GenerateResource.cache
