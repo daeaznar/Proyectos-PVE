@@ -53,7 +53,7 @@ namespace ImagesWindow
                     MessageBox.Show("Gamer couldn't be created");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 MessageBox.Show("An error ocurred while saving the record");

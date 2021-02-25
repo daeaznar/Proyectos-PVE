@@ -122,7 +122,7 @@ namespace Grades
                 btnCalculate.Enabled = false;
                 btnClear.Enabled = true;
 
-
+                //Connection to DB
                 GradesManager manager = new GradesManager();
                 try
                 {
@@ -143,7 +143,7 @@ namespace Grades
                         MessageBox.Show("Record couldn't be saved");
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                     MessageBox.Show("An error ocurred while saving the record");

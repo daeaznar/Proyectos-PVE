@@ -34,12 +34,15 @@ namespace ImagesWindow
             this.lblDate = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dttEvent = new System.Windows.Forms.DateTimePicker();
+            this.dtgEvents = new System.Windows.Forms.DataGridView();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEvents)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
-            this.lblSubject.Location = new System.Drawing.Point(52, 38);
+            this.lblSubject.Location = new System.Drawing.Point(48, 38);
             this.lblSubject.Name = "lblSubject";
             this.lblSubject.Size = new System.Drawing.Size(58, 20);
             this.lblSubject.TabIndex = 0;
@@ -48,7 +51,7 @@ namespace ImagesWindow
             // txtSubject
             // 
             this.txtSubject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSubject.Location = new System.Drawing.Point(56, 61);
+            this.txtSubject.Location = new System.Drawing.Point(52, 61);
             this.txtSubject.Name = "txtSubject";
             this.txtSubject.Size = new System.Drawing.Size(336, 27);
             this.txtSubject.TabIndex = 1;
@@ -56,7 +59,7 @@ namespace ImagesWindow
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(52, 119);
+            this.lblDate.Location = new System.Drawing.Point(48, 95);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(41, 20);
             this.lblDate.TabIndex = 2;
@@ -64,27 +67,52 @@ namespace ImagesWindow
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(56, 220);
+            this.btnAdd.Location = new System.Drawing.Point(52, 160);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(336, 42);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add Event";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dttEvent
             // 
             this.dttEvent.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.dttEvent.Location = new System.Drawing.Point(56, 142);
+            this.dttEvent.Location = new System.Drawing.Point(52, 118);
             this.dttEvent.Name = "dttEvent";
             this.dttEvent.Size = new System.Drawing.Size(336, 27);
             this.dttEvent.TabIndex = 4;
+            // 
+            // dtgEvents
+            // 
+            this.dtgEvents.AllowUserToAddRows = false;
+            this.dtgEvents.AllowUserToDeleteRows = false;
+            this.dtgEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEvents.Location = new System.Drawing.Point(437, 61);
+            this.dtgEvents.Name = "dtgEvents";
+            this.dtgEvents.ReadOnly = true;
+            this.dtgEvents.Size = new System.Drawing.Size(357, 201);
+            this.dtgEvents.TabIndex = 5;
+            this.dtgEvents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEvents_CellClick);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(52, 220);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(336, 42);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(457, 322);
+            this.ClientSize = new System.Drawing.Size(841, 322);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.dtgEvents);
             this.Controls.Add(this.dttEvent);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblDate);
@@ -95,6 +123,7 @@ namespace ImagesWindow
             this.Name = "Schedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Schedule";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEvents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +136,7 @@ namespace ImagesWindow
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DateTimePicker dttEvent;
+        private System.Windows.Forms.DataGridView dtgEvents;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

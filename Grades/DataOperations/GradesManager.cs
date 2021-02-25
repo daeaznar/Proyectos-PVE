@@ -18,17 +18,17 @@ namespace Grades.DataOperations
 
         public bool Delete(Data.Grades item)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Data.Grades> Read()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public bool Update(Data.Grades item)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
     }
