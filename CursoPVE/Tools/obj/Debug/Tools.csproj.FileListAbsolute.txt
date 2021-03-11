@@ -1,0 +1,13 @@
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\Tools.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\Tools.pdb
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\PdfSharp.Charting.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\PdfSharp.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\PdfSharp.xml
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\PdfSharp.Charting.xml
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\de\PdfSharp.resources.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\obj\Debug\Tools.csprojAssemblyReference.cache
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\obj\Debug\Tools.csproj.CopyComplete
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\obj\Debug\Tools.dll
+D:\Desktop\UNIVA\7°\Programación Visual y por Eventos\Projects\Proyectos-PVE\CursoPVE\Tools\obj\Debug\Tools.pdb
