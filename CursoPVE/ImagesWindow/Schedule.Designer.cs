@@ -53,7 +53,7 @@ namespace ImagesWindow
             this.txtSubject.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtSubject.Location = new System.Drawing.Point(52, 61);
             this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(336, 27);
+            this.txtSubject.Size = new System.Drawing.Size(287, 27);
             this.txtSubject.TabIndex = 1;
             // 
             // lblDate
@@ -69,7 +69,7 @@ namespace ImagesWindow
             // 
             this.btnAdd.Location = new System.Drawing.Point(52, 160);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(336, 42);
+            this.btnAdd.Size = new System.Drawing.Size(287, 42);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add Event";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@ namespace ImagesWindow
             this.dttEvent.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
             this.dttEvent.Location = new System.Drawing.Point(52, 118);
             this.dttEvent.Name = "dttEvent";
-            this.dttEvent.Size = new System.Drawing.Size(336, 27);
+            this.dttEvent.Size = new System.Drawing.Size(287, 27);
             this.dttEvent.TabIndex = 4;
             // 
             // dtgEvents
@@ -88,18 +88,19 @@ namespace ImagesWindow
             this.dtgEvents.AllowUserToAddRows = false;
             this.dtgEvents.AllowUserToDeleteRows = false;
             this.dtgEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgEvents.Location = new System.Drawing.Point(437, 61);
+            this.dtgEvents.Location = new System.Drawing.Point(386, 61);
             this.dtgEvents.Name = "dtgEvents";
             this.dtgEvents.ReadOnly = true;
-            this.dtgEvents.Size = new System.Drawing.Size(357, 201);
+            this.dtgEvents.Size = new System.Drawing.Size(390, 201);
             this.dtgEvents.TabIndex = 5;
             this.dtgEvents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEvents_CellClick);
+            this.dtgEvents.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgEvents_MouseClick);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(52, 220);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(336, 42);
+            this.btnUpdate.Size = new System.Drawing.Size(287, 42);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -110,7 +111,7 @@ namespace ImagesWindow
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(841, 322);
+            this.ClientSize = new System.Drawing.Size(828, 361);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dtgEvents);
             this.Controls.Add(this.dttEvent);

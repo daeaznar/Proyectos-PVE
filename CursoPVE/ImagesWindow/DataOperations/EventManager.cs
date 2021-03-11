@@ -19,7 +19,16 @@ namespace ImagesWindow.DataOperations
 
         public bool Delete(Event item)
         {
-            throw new NotImplementedException();
+            using (var context = new DataContext())
+            {
+                var entry = context.Event.FirstOrDefault(x => x.EventId == item.EventId);
+                if (entry == null)
+                {
+                    return false;
+                }
+                context.Event.Remove(entry);
+                return context.SaveChanges() > 0;
+            }
         }
 
         public IEnumerable<Event> Read()

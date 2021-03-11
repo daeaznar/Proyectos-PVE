@@ -1,6 +1,9 @@
-﻿using ImagesWindow.DataOperations;
+﻿using ImagesWindow.Data;
+using ImagesWindow.DataOperations;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
+using Tools;
 
 namespace ImagesWindow
 {
@@ -8,9 +11,12 @@ namespace ImagesWindow
     {
         private EventManager manager;
         private long currentEvent;
+
+        private ModelValidation<Event> validation;
         public Schedule()
         {
             manager = new EventManager();
+            validation = new ModelValidation<Event>();
             InitializeComponent();
             dtgEvents.DataSource = manager.Read();
             currentEvent = 0;
@@ -98,6 +104,65 @@ namespace ImagesWindow
             {
 
                 MessageBox.Show("An error occure while saving data", "Error");
+            }
+        }
+
+        //Delete records in DB
+        private void dtgEvents_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ContextMenu contextMenu = new ContextMenu();
+                var item = contextMenu.MenuItems.Add("Delete");
+                item.Click += Item_Click;
+
+                var index = dtgEvents.HitTest(e.X, e.Y).RowIndex;
+                if (index > -1)
+                {
+                    currentEvent = Convert.ToInt64(dtgEvents[0, index].Value);
+                    contextMenu.Show(dtgEvents, new Point(e.X, e.Y));
+                }
+                else
+                {
+                    MessageBox.Show("Please click one of the table rows");
+                }
+            }
+        }
+
+        private void Item_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var eventToDelete = new Data.Event()
+                {
+                    EventId = currentEvent
+                };
+
+                var errors = validation.Validate(eventToDelete);
+                if (errors.Count > 0)
+                {
+                    foreach (var error in errors)
+                    {
+                       var temp = error.ErrorMessage;
+                    }
+                    MessageBox.Show("Event has invalid data");
+                    return;
+                }
+
+                if (manager.Delete(eventToDelete))
+                {
+                    MessageBox.Show("Event deleted");
+                    dtgEvents.DataSource = manager.Read();
+                }
+                else
+                {
+                    MessageBox.Show("Event couldn't be deleted. Please contact IT", "Error");
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured while saving data. Please try again later", "Error");
             }
         }
     }
